@@ -1,0 +1,33 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+import Chess from './Components/labtask';
+
+
+import Lab5S from './Components/Lab5p2';
+import ListF from './Components/Flatlist';
+import Ga from './Components/Test';
+import Count from './Components/assign2';
+import CC from './Components/assign2';
+import Counterex from './Components/assign2';
+
+ 
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+     <Counterex></Counterex>
+      <StatusBar style="auto" />
+    </View>
+  );
+  
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'white',
+    flexWrap:"wrap",
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

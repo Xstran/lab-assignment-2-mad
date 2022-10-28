@@ -1,0 +1,118 @@
+import React from "react";
+import { StyleSheet,View, Text , ImageBackground, Image} from "react-native";
+import { TextInput } from "react-native-web";
+function Counterex(props){
+   
+    return(
+        
+        <>
+        <View style={styles.input}>
+            
+        <ImageBackground style={ styles.imgBackground } 
+                 resizeMode='cover' 
+                 source={require('../assets/imageslogo.png')}>
+                    <Text style={styles.Txt}>WELCOME TO dreamify </Text>
+                    <Text style={styles.Txt}>where dreams come true </Text>
+                    
+   <TextInput style={styles.input2}  placeholder="username"></TextInput>
+   <TextInput style={styles.input3}  placeholder="password"></TextInput>
+   
+   <button  style={styles.btn}> start dreaming</button>
+   <Text style={styles.Txt}> dont have account ? sign up </Text>
+
+
+
+</ImageBackground>
+        
+        </View>
+        
+       
+         
+
+        </>
+    
+    )
+  
+    
+
+}
+const styles=StyleSheet.create({
+    input:{
+        width:350,
+        height:550
+      
+        
+     
+
+
+    },
+  input2:{
+        width:200,
+        borderWidth:3,
+        height:40,
+        
+        
+       marginTop:150,
+       alignSelf:"center",
+       backgroundColor:"white"
+      
+
+
+    },
+    input3:{
+        width:200,
+        borderWidth:3,
+        height:40,
+        
+        
+     marginTop:15,
+     alignSelf:"center",
+     backgroundColor:"white"
+     
+      
+
+
+    },
+    btn:{
+        height:40,
+        width:200,
+        marginTop:15,
+        backgroundColor:"blue",
+       
+        
+        
+     
+     alignSelf:"center"
+     
+      
+
+
+    },
+    Txt:{
+        
+        color:"white",
+        fontSize:20,
+        marginTop:25,
+       
+       
+        
+        
+     
+     alignSelf:"center"
+     
+      
+
+
+    },
+    
+    
+    
+
+    imgBackground: {
+        width: '100%',
+        height: '100%',
+        flex: 1 
+},
+})
+
+export default Counterex
